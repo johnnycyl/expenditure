@@ -1,13 +1,23 @@
 # Expenditure
 A simple web application to analyse expenses. Built using Laravel.
 
-# Instructions
+## Instructions
 1. Install/Update Laravel 5.5
 2. Clone this repository
-3. Migrate and seed the database using php artisan migrate --seed
+3. Migrate and seed the database using 
+```sh 
+php artisan migrate --seed 
+```
 4. Navigate to http://expenditure.app
+5. Log in with the following credentials:
+```sh
+Email: johndoe@example.com
+Password : password
+```
+200 random data would be seeded to the database link to the above user (John Doe).
+Alternatively, new accounts can be created by signing up. However data would need to be inserted manually using the new Transaction Feature.
 
-### For homestead users
+### For Homestead Users
 
 #### Adding Additional Sites
 
@@ -28,3 +38,15 @@ If Vagrant is not automatically managing your "hosts" file, you may need to add 
 ```
 
 Once the site has been added, run the vagrant reload --provision command from your Homestead directory.
+
+## Features
+- Sign up / Log in
+- New Transaction
+- Dashboard
+- Analytics Overview
+- Monthly Analytics
+- View Transactions
+
+## Possible Future Enhancement
+- Better UI/UX
+- Deeper level of Analytics
