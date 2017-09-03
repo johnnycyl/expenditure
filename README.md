@@ -4,12 +4,13 @@ A simple web application to analyse expenses. Built using Laravel.
 ## Instructions
 1. Install/Update Laravel 5.5
 2. Clone this repository
-3. Migrate and seed the database using 
+3. Copy .env.example to .env
+4. Migrate and seed the database using 
 ```sh 
 php artisan migrate --seed 
 ```
-4. Navigate to http://expenditure.app
-5. Log in with the following credentials:
+5. Navigate to http://expenditure.app
+6. Log in with the following credentials:
 ```sh
 Email: johndoe@example.com
 Password : password
