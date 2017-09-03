@@ -1,0 +1,94 @@
+html,
+body,
+#app {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.jumbotron {
+    text-align: center;
+    border-bottom: .05rem solid #e5e5e5;
+}
+.jumbotron .btn {
+    padding: .75rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+/*
+* Sidebar
+*/
+
+.sidebar {
+    border-right: 1px solid #eee;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.min-height-100 {
+    min-height: 100%;
+}
+
+/* Sidebar navigation */
+.sidebar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidebar .nav {
+    margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+    width: 100%;
+}
+
+.sidebar a {
+    color: #fff;
+}
+
+.sidebar a:hover {
+    color: #868e96;
+}
+
+.sidebar .nav-item + .nav-item {
+    margin-left: 0;
+}
+
+.sidebar .nav-link {
+    border-radius: 0;
+}
+
+/*
+* Dashboard
+*/
+
+/* Placeholders */
+.placeholders {
+    padding-bottom: 3rem;
+}
+
+.placeholder img {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/*Flash Message*/
+#flash-message {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    animation: flash-message 6s forwards;
+}
+
+@keyframes flash-message {
+    0%   {opacity: 1;}
+    100% {opacity: 0; display:none;}
+}
