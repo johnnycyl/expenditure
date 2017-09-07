@@ -23,6 +23,10 @@ Route::post('/transactions/store', 'TransactionController@store');
 
 Route::get('transactions/show', 'TransactionController@show');
 
-Route::get('/analytics/month', 'showMonthController@index');
+Route::get('/analytics/month', 'MonthController@index');
 
-Route::post('/analytics/month', 'showMonthController@create');
+Route::get('/analytics/month/{month}/{year}', 'MonthController@show');
+
+Route::post('/analytics/month', 'MonthController@create');
+
+Route::get('/transactions/shared', 'SharedTransactionController@index');

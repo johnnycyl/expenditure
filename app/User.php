@@ -31,4 +31,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Transaction::class);
     }
+
+    public function sharedTransactions()
+    {
+        return $this->belongsToMany(Transaction::class);
+    }
 }

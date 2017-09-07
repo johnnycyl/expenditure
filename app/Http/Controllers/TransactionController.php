@@ -43,11 +43,17 @@ class TransactionController extends Controller
 
         if ($category == 'All')
         {
-            $transactions = Transaction::latest()->get();
+            $transactions = Transaction::latest()
+                ->where('user_id', auth()->id())
+                ->get();
         }
         else
         {
-            $transactions = Transaction::latest()->where('type', '=', $category)->get();
+            $transactions = Transaction::latest()->where([
+                ['type', '=', $category],
+                ['user_id', auth()->id()],
+                ])
+                ->get();
         }
 
         return view('transactions/show', compact('transactions', 'category'));

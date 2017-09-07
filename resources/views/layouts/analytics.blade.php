@@ -12,7 +12,7 @@
             @foreach ($typeBreakdown as $type)
                 <span class="font-weight-bold">{{ $type->type }} > Spent > A$ {{ $type->total_spent }} </span>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: {{ $type->percentage }}%" aria-valuenow="{{ $type->percentage }}" aria-valuemin="0" aria-valuemax="100"><span class="text-dark">{{ round($type->percentage,2) }}%</span></div>
+                    <div class="progress-bar" role="progressbar" style="width: {{ $type->total_spent/$total * 100 }}%" aria-valuenow="{{ $type->total_spent/$total * 100 }}" aria-valuemin="0" aria-valuemax="100"><span class="text-dark">{{ round($type->total_spent/$total * 100,2) }}%</span></div>
                 </div>
             @endforeach
         </div>
